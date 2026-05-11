@@ -15,7 +15,7 @@
     justify-content: center;
     height: 100vh;
     /*width: 50%;*/
-    background-color: rgba(19, 107, 43, 0.691);
+    background-color: rgba(0, 0, 0, 0.829);
 }
 
 
@@ -28,9 +28,26 @@
     align-items: center;
     border: 1px solid black ;
     border-radius: 15px;
-    background-color: blue;
+    background-color: rgb(189, 183, 175);
     width: 50%;
     height: 25px;
     margin-top: 25px;
     
+}
+
+.botones{
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  
+}
+
+button{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: bisque;
 }
