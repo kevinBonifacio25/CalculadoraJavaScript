@@ -59,6 +59,79 @@ btn_2.addEventListener("click", () =>{
     }
 })
 
+btn_3.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "3"
+    } else {
+        mostrar_pantalla_resultado.textContent += "3"//hacer analogo para los demas numeros
+    }
+})
+
+btn_4.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "4"
+    } else {
+        mostrar_pantalla_resultado.textContent += "4"//hacer analogo para los demas numeros
+    }
+})
+
+btn_5.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "5"
+    } else {
+        mostrar_pantalla_resultado.textContent += "5"//hacer analogo para los demas numeros
+    }
+})
+
+btn_6.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "6"
+    } else {
+        mostrar_pantalla_resultado.textContent += "6"//hacer analogo para los demas numeros
+    }
+})
+
+btn_7.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "7"
+    } else {
+        mostrar_pantalla_resultado.textContent += "7"//hacer analogo para los demas numeros
+    }
+})
+
+btn_8.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "8"
+    } else {
+        mostrar_pantalla_resultado.textContent += "8"//hacer analogo para los demas numeros
+    }
+})
+
+btn_9.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "9"
+    } else {
+        mostrar_pantalla_resultado.textContent += "9"//hacer analogo para los demas numeros
+    }
+})
+
+btn_0.addEventListener("click", () =>{
+
+    if (mostrar_pantalla_resultado.textContent === "0") {
+        mostrar_pantalla_resultado.textContent = "0"
+    } else {
+        mostrar_pantalla_resultado.textContent += "0"//hacer analogo para los demas numeros
+    }
+})
+
+
 
 
 
@@ -81,6 +154,61 @@ btn_resta.addEventListener("click", () =>{
 
 })
 
+// evento suma
+btn_suma.addEventListener("click", () =>{
+
+    console.log("primer:", primer_numero)
+    console.log("segundo:", segundo_numero)
+    console.log("pantalla:", mostrar_pantalla_resultado.textContent)
+
+
+    //if (mostrar_pantalla_resultado.textContent === "") return
+
+    primer_numero = mostrar_pantalla_resultado.textContent // guarda el numero del boton en la variable "primer_numero"
+    
+    operacion = "+" //guarda el valor de la operacion en la variable "operacion"
+    
+    mostrar_pantalla_resultado.textContent = ""
+
+})
+
+// evento multiplicacion
+
+btn_multiplicacion.addEventListener("click", () =>{
+
+    console.log("primer:", primer_numero)
+    console.log("segundo:", segundo_numero)
+    console.log("pantalla:", mostrar_pantalla_resultado.textContent)
+
+
+    //if (mostrar_pantalla_resultado.textContent === "") return
+
+    primer_numero = mostrar_pantalla_resultado.textContent // guarda el numero del boton en la variable "primer_numero"
+    
+    operacion = "*" //guarda el valor de la operacion en la variable "operacion"
+    
+    mostrar_pantalla_resultado.textContent = ""
+
+})
+
+//evento division
+
+btn_division.addEventListener("click", () =>{
+
+    console.log("primer:", primer_numero)
+    console.log("segundo:", segundo_numero)
+    console.log("pantalla:", mostrar_pantalla_resultado.textContent)
+
+
+    //if (mostrar_pantalla_resultado.textContent === "") return
+
+    primer_numero = mostrar_pantalla_resultado.textContent // guarda el numero del boton en la variable "primer_numero"
+    
+    operacion = "/" //guarda el valor de la operacion en la variable "operacion"
+    
+    mostrar_pantalla_resultado.textContent = ""
+
+})
 
 //calculos
 
@@ -97,7 +225,17 @@ btn_igual.addEventListener("click", () => {
     let resultado = 0
 
     if(operacion === "-"){
+
         resultado = Number(primer_numero) - Number(segundo_numero)
+    }else if(operacion === "+"){
+        resultado = Number(primer_numero) + Number(segundo_numero)
+
+    }else if(operacion === "*"){
+        resultado = Number(primer_numero) * Number(segundo_numero)
+
+    }else if(operacion === "/"){
+        resultado = Number(primer_numero) / Number(segundo_numero)
+
     }
     mostrar_pantalla_resultado.textContent = resultado
 })
