@@ -1,0 +1,36 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container_padre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    /*width: 50%;*/
+    background-color: rgba(19, 107, 43, 0.691);
+}
+
+
+.pantalla_resultados{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black ;
+    border-radius: 15px;
+    background-color: blue;
+    width: 50%;
+    height: 25px;
+    margin-top: 25px;
+    
+}
